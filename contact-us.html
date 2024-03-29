@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: 'Poppins' , sans-serif;
+		}
+		body{
+			background-color:black;
+			margin: 0;
+			padding: 0;
+		}
+		header{
+			width: 100%;
+			height: 50%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		nav li{
+			display: inline-block;
+			list-style-type: none;
+			padding: 0px 30px;
+			font-size: 20px;
+
+			transform: translate(-20px , -10px);
+		}
+		a{
+			font-size: 20px;
+			font-size: bold;
+			text-decoration: none;
+			color: white;
+		}
+		hr{
+			height: 35px;
+			width: 15%;
+			margin: -38px 470px;
+			background: darkolivegreen;
+			border: none;
+			border-radius: 18px;
+			transition: .5s ease-in-out;
+		}
+		.two:hover ~ hr{
+			margin-left: 16.5%;
+		}
+		.three:hover ~ hr{
+			margin-left: 34.5%;
+		}
+		.four:hover ~ hr{
+			margin-left: 52%;
+			width: 18%;
+		}
+		.five:hover ~ hr{
+			margin-left: 73%;
+			width: 22%;
+		}
+		.logo{
+			margin-left: 60px;
+		}
+		.container{
+			color: white;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 30px;
+		}
+		.contact{
+			position: relative;
+			min-height: 100vh;
+			padding: 50px 100px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+		.content h1{
+			margin-bottom: 100px;
+			font-size: 70px;
+			font-family: Bradley Hand ITC;
+			color: darkolivegreen;
+		}
+
+		.contact .content{
+			max-width: 800px;
+			text-align: center;
+
+		}
+		.contact .content h2{
+			font-size: 36px;
+			font-weight: 500;
+			color: whitesmoke;
+		}
+		.contact .content p{
+			
+			font-weight: 300;
+			color: whitesmoke;
+		}
+		.container .contactInfo{
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			margin-left: 150px;
+			margin-bottom: 100px;
+		}
+		.container .contactInfo .box{
+			position: relative;
+			padding: 20px 0;
+			display: flex;
+			margin-bottom: 5px;
+		}
+
+		.container .contactInfo .box .icon{
+			min-width: 40px;
+			height: 40px;
+			
+			border-radius:50% ;
+			display: flex;
+			justify-content:center ;
+			align-content: center;
+            font-size:22px ;
+            color:white;
+            top: 5px;
+		}
+		.container .contactInfo .box .text{
+			display: flex;
+			margin-left: 20px;
+			font-size: 16px;
+			color: white;
+			flex-direction: column;
+			font-weight: 300;
+			margin-bottom: 5px;
+		}
+		.container .contactInfo .box .text h3{
+			font-weight: 650;
+			color: darkolivegreen;
+		}
+		.contactForm{
+			width:40% ;
+			padding: 40px;
+			background:white;
+			opacity: 0.8;
+			margin-bottom: 50px;
+			box-shadow: 1px 1px 10px 2px darkolivegreen;
+			margin-right: 130px; 
+		}
+		.contactForm h2{
+			font-size: 30px;
+			color: black;
+			font-weight: 500;
+		}
+		.contactForm .inputBox{
+			position: relative;
+			width:100% ;
+			margin-top: 10px;
+		}
+		.contactForm .inputBox input,.contactForm .inputBox textarea{
+			width: 100%;
+			padding: 5px 0 ;
+			font-size: 16px;
+			margin:10px 0 ;
+			border:none ;
+			border-bottom: 2px solid #333;
+			outline:none ;
+			resize: none;
+		}
+		.contactForm .inputBox span{
+			position: absolute;
+			left: 0 ;
+			padding: 5px 0 ;
+			font-size: 16px;
+			margin:10px 0 ;
+			pointer-events: none;
+			transition:0.5s ;
+			color: black;
+		}
+		.contactForm .inputBox input:focus ~ span,.contactForm .inputBox input:valid ~ span,.contactForm .inputBox input:focus ~ span,.contactForm .inputBox input:valid ~ span{
+			color:black ;
+			font-size: 12px;
+			transform: translateY(-20px);
+		}
+		.contactForm .inputBox input[type="submit"]{
+			width: 100px;
+			background: darkolivegreen;
+			color: whitesmoke;
+			cursor: pointer;
+			font-size: 18px;
+			border-radius: 5px;
+
+		}
+		@media(max-width:991px){
+			.contact{
+				padding: 50px;
+			}
+			.container{
+				flex-direction: column;
+			}
+			.container .contactInfo{
+				margin-bottom: 40px;
+			}
+			.container .contactInfo,.contactForm{
+                width: 100%;
+			} 
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+	<div class="logo">
+		<img src="naya.png" height="70px" width="170px">
+	</div>
+	<nav>
+		<ul>
+			<li class="one"><a href="index.html">Home</a> </li>
+			<li class="two"><a href="ABOUTT.html">About</a> </li>
+			<li class="three"><a href="Skills.html">Skills</a> </li>
+			<li class="four"><a href="project.html">Projects</a> </li>
+			<li class="five"><a href="contact-us.html">Contact Us</a></li>
+			<hr />
+		</ul>
+	</nav>
+	</header>
+<section class="contact">
+	<div class="content">
+		<h1>Contact Us</h1>
+	</div>
+	
+	<div class="container">
+		<div class="contactInfo">
+			<div class="box">
+				<div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></i></div>
+				<div class="text">
+					<h3>Address</h3>
+					<p>Gopalgang,<br>shree ram colony,<br>470001</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+				<div class="text">
+					<h3>Phone</h3>
+					<p>+91 7440268768</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+				<div class="text">
+					<h3>Email</h3>
+					<p>Kalarshivani29@gmail.com</p>
+				</div>
+			</div>
+
+		</div>
+		<div class="contactForm">
+			<form>
+				<h2>Send Message</h2>
+				<div class="inputBox">
+					<input type="text" name="" required="required">
+					<span>Full Name</span>
+				</div>
+				<div class="inputBox">
+					<input type="text" name="" required="required">
+					<span>Email</span>
+				</div>
+				<div class="inputBox">
+					<textarea required="required"></textarea>
+					<span>Type your Message....</span>
+				</div>
+			</form>
+			<div class="inputBox">
+					<input type="submit" value="Send">					
+		    </div>
+		</div>
+	</div>
+</section>
+</body>
+</html> 

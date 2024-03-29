@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+		}
+		body{
+			background-color:black;
+
+		}
+		header{
+			width: 100%;
+			height: 50%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		nav li{
+			display: inline-block;
+			list-style-type: none;
+			padding: 0px 30px;
+			font-size: 20px;
+			transform: translate(-20px , -10px);
+		}
+		a{
+			font-size: 20px;
+			font-size: bold;
+			text-decoration: none;
+			color: white;
+		}
+		hr{
+			height: 35px;
+			width: 15%;
+			margin: -38px 220px;
+			background: darkolivegreen;
+			border: none;
+			border-radius: 18px;
+			transition: .5s ease-in-out;
+		}
+		.one:hover ~ hr{
+			margin-left: -1.15%;
+		}
+		.two:hover ~ hr{
+			margin-left: 17%;
+		}
+		.three:hover ~ hr{
+			margin-left: 34.5%;
+		}	
+		.four:hover ~ hr{
+			margin-left: 52%;
+			width: 18%;
+		}
+		.five:hover ~ hr{
+			margin-left: 73%;
+			width: 22%;
+		}
+		.logo{
+			margin-left: 60px;
+		}
+		.first{
+			height: 500px;
+			width: 700px;
+			margin-top: 60px;
+			margin-left: 320px;
+			border: 1px solid darkolivegreen;
+			border-radius: 15px;
+			margin-bottom: 20px;
+			box-shadow: 1px 1px 10px 2px darkolivegreen ;
+		}
+		h1{
+			color: white;
+			margin-top: 50px;
+	        margin-left: 550px;
+	        font-size: 60px;
+	        font-family: Bradley Hand ITC;
+			font-weight: bolder;
+		}
+		span{			
+			color: darkolivegreen;
+			font-family: Bradley Hand ITC;
+			font-weight: bolder;
+		}
+		h2{
+			font-weight: 400;
+			letter-spacing: 1px;
+			margin-top: 40px;
+			margin-bottom: 20px;
+			margin-left: 50px;
+			color: white;
+			font-size: 16px;
+		}
+		h3{
+			color: white;
+			margin-left: 230px;
+			margin-top: 30px;
+			letter-spacing: 1px;
+			font-size: 35px;
+			font-family: serif;
+		}
+		.new{
+			font-family: sans-serif;
+			margin-left: 40px;
+		}
+		.progress-bar{
+			background-color: grey;
+			width: 550px;
+			height: 10px;
+			border-radius: 5px;
+			margin-left: 50px;
+		}
+		.progress-bar div{
+			height: 10px;
+			border-radius: 5px;
+			width: 0%;			
+		}
+		.progress-bar div span{
+			height: 40px;
+			width: 40px;
+			border-radius: 50%;
+			background: black;
+			float: right;
+			margin-top: -15px;
+			margin-right: -20px;
+			color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+		}
+		.html{
+			background-color: darkolivegreen;
+			animation: html 1s linear forwards;
+		}
+		@keyframes html{
+			100%{
+				width: 95%;
+			}
+		}
+		@keyframes css{
+			100%{
+				width: 85%;
+			}
+		}
+		@keyframes java{
+			100%{
+				width: 70%;
+			}
+		}
+		@keyframes boot{
+			100%{
+				width: 80%;
+			}
+		}
+		.css{
+			background-color: darkolivegreen;
+			animation: css 1s linear forwards;
+		}
+		.java{
+			background-color: darkolivegreen;
+			animation: java 1s linear forwards;
+		}
+		.boot{
+			background-color: darkolivegreen;
+			animation: boot 1s linear forwards;
+		}
+		.css span{
+			border:1.5px solid darkolivegreen ;
+		}
+		.java span{
+			border:1.5px solid darkolivegreen ;
+		}
+		.boot span{
+			border:1.5px solid darkolivegreen ;
+		}
+		.html span{
+			border:1.5px solid darkolivegreen ;
+		}
+		.main{
+			display: flex;
+		}
+		   
+	</style>
+</head>
+<body>
+<header>
+	<div class="logo">
+		<img src="naya.png" height="70px" width="170px">
+	</div>
+	<nav>
+		<ul>
+			<li class="one"><a href="index.html">Home</a> </li>
+			<li class="two"><a href="ABOUTT.html">About</a> </li>
+			<li class="three"><a href="Skills.html">Skills</a> </li>			
+			<li class="four"><a href="project.html">Projects</a> </li>
+			<li class="five"><a href="contact-us.html">Contact Us</a></li>
+			<hr />
+		</ul>
+	</nav>
+</header>
+<h1 class="sub-title">My <span >Skills</span></h1>
+<div class="main">	
+<div class="first">
+	<h3>Technical Skills</h3>
+	<h2>HTML</h2>
+	<div class="progress-bar">
+		<div class="html"><span class="new">95%</span></div>
+	</div>
+	<h2>CSS</h2>
+	<div class="progress-bar">
+		<div class="css"><span class="new">85%</span></div>
+	</div>
+	<h2>JAVASCRIPT</h2>
+	<div class="progress-bar">
+		<div class="java"><span class="new">70%</span></div>
+	</div>
+	<h2>BOOTSTRAP</h2>
+	<div class="progress-bar">
+		<div class="boot"><span class="new">80%</span></div>
+	</div>
+</div>
+	
+</div>
+</div>
+</section>
+</body>
+</html>
